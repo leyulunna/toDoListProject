@@ -5,17 +5,9 @@ import InputArea from "./InputArea";
 function App() {
   const [items, setItems] = useState([]);
 
-  function addItem(inputValue) {
+  function addItem(inputText) {
     setItems((prevItems) => {
-      return [...prevItems, inputValue];
-    });
-  }
-
-  function deleteItem(id) {
-    setItems((prevItems) => {
-      return prevItems.filter((item, index) => {
-        return index !== id;
-      });
+      return [...prevItems, inputText];
     });
   }
 
@@ -24,16 +16,11 @@ function App() {
       <div className="heading">
         <h1>To-Do List</h1>
       </div>
-      <InputArea buttonClick={addItem} />
+      <InputArea onAdd={addItem} />
       <div>
         <ul>
           {items.map((todoItem, index) => (
-            <ToDoItem
-              key={index}
-              id={index}
-              text={todoItem}
-              onChecked={deleteItem}
-            />
+            <ToDoItem key={index} id={index} text={todoItem} />
           ))}
         </ul>
       </div>

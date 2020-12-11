@@ -54,6 +54,8 @@ body {
     width: 70%;
     margin-bottom: 20px;
   }
+
+  .add, input:focus {outline: 0;};
   
   button {
     padding: 0;
@@ -62,8 +64,16 @@ body {
     text-decoration: none;
     padding-bottom: 3px;
     border-radius: 5px;
+    border-color: hsl(198, 1%, 29%);
     background-color: #ffeaa7;
   }
+
+  .add{
+    border-width: 0px;
+    border-color: #f1f5f8;
+    color: hsl(198, 1%, 29%);
+  } 
+
   button span {
     background: #f1f5f8;
     padding: 0.5rem 1rem;

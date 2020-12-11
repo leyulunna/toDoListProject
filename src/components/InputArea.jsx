@@ -10,11 +10,20 @@ function InputArea(props) {
 
   return (
     <div className="form">
-      <input onChange={handleChange} type="text" value={inputText} />
-      <button
+      <input
+        id="todoText"
+        onChange={handleChange}
+        type="text"
+        value={inputText}
+      />
+      <button className="add"
         onClick={() => {
-          props.buttonClick(inputText);
-          setInputText("");
+          if (inputText === "") {
+            document.getElementById("todoText").focus();
+          } else {
+            props.onAdd(inputText);
+            setInputText("");
+          }
         }}
       >
         <span>Add</span>
@@ -24,3 +33,4 @@ function InputArea(props) {
 }
 
 export default InputArea;
+

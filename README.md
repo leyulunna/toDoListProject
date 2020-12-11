@@ -4,8 +4,8 @@ A clear-looked app created with React.js
 
 ## Functionalities
 * Add items into a list of bullet points
-* Easily check to-do things
-* Delete an item in one-click
+* Easily view to-do things
+* Check an item in one-click
 
 ## Technologies
 Project is created with:
