@@ -65,22 +65,45 @@ body {
     padding-bottom: 3px;
     border-radius: 5px;
     border-color: hsl(198, 1%, 29%);
-    background-color: #ffeaa7;
+    background-color: #F1F2F2;
+    transition: all 0.25s ease-in-out;
+  }
+
+  button span:hover {
+    background-color:#fdcb6e;
+    border-color: #F2994A;
+    color: #F1F2F2;
+    border-radius: 5px;
+  }
+
+  button:active {
+    background-color: #F2994A;
+		border-color: #ffeaa7;
+		color: #F1F2F2;
+		box-shadow: none;
+  }
+
+  button:focus,:active:focus {
+		background-color: #F2994A;
+		border-color:  #F2994A;
+		color: #F1F2F2;
+		outline: 1px auto #F2994A;
+  }
+
+  button span {
+    background-color: #f1f5f8;
+    padding: 0.5rem 1rem;
+    display: block;
+    border-radius: 5px;
+    border: 2px solid #ffeaa7;
   }
 
   .add{
     border-width: 0px;
     border-color: #f1f5f8;
-    color: hsl(198, 1%, 29%);
+    color: #F2994A;
+    padding: 0;
   } 
-
-  button span {
-    background: #f1f5f8;
-    padding: 0.5rem 1rem;
-    display: block;
-    border-radius: 5px;
-    border: 2px solid hsl(198, 1%, 29%);
-  }
   
   li {
     text-align: left;
