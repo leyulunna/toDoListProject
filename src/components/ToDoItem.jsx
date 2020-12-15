@@ -9,10 +9,16 @@ function ToDoItem(props) {
     });
   }
 
+  function cancelItem(){
+    props.delete(props.id)
+    document.getElementById("todoText").focus();
+  }
+
   return (
-    <div onClick={checkItem}>
+    <div>
       <li style={isDone ? { textDecoration: "line-through" } : null}>
-        {props.text}
+        <span id="item" onClick={checkItem}>{props.text}</span>
+        <button onClick={cancelItem}>Delete</button>
       </li>
     </div>
   );
