@@ -38,7 +38,9 @@ function App() {
     </div>
     <div className="footer">
         <p>Copyright @ {year}
-        <a className="fab fa-github" href="https://github.com/leyulunna/todo-list" target="_blank"></a>
+          <a className="fab fa-github" rel="noopener noreferrer" href="https://github.com/leyulunna/todo-list" target="_blank">
+            {null}
+          </a>
         </p>
     </div>
   </div>
