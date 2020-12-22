@@ -39,6 +39,19 @@ body {
     background-color: #fdcb6e;
     font-size: 1.5rem;
   }
+
+  .footer p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  a {
+    text-decoration: none;
+    margin: 30px;
+    color: hsl(198, 1%, 29%);
+  }
   
   .form input {
     box-sizing: border-box;

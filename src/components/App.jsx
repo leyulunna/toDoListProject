@@ -19,8 +19,11 @@ function App() {
     })
   }
 
+  const year = new Date().getFullYear();
+
   return (
-    <div className="container">
+    <div>
+      <div className="container">
       <div className="heading">
         <h1>To-Do List</h1>
       </div>
@@ -33,6 +36,12 @@ function App() {
         </ul>
       </div>
     </div>
+    <div className="footer">
+        <p>Copyright @ {year}
+        <a className="fab fa-github" href="https://github.com/leyulunna/todo-list" target="_blank"></a>
+        </p>
+    </div>
+  </div>
   );
 }
 
